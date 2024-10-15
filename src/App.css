@@ -1,0 +1,94 @@
+.main {
+  height: 100vh;
+  background: linear-gradient(156.8deg, rgb(30, 144, 231) 27.1%, rgb(67, 101, 225) 77.8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 350px;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.login-form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgb(169, 169, 189);
+  border-radius: 20px;
+  background: white;
+  box-sizing: border-box;
+  outline: blue;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 8px rgba(30, 144, 231, 0.7);
+}
+
+.login-form button {
+  border-radius: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #017aff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup {
+  padding-top: 20px;
+}
+
+.signup p a {
+  text-decoration: none;
+  color: #33acfb;
+}
+
+@media (max-width: 776px) {
+  .login-card {
+    min-width: 300px;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .main {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .login-form input {
+    padding: 10px 12px;
+  }
+
+  .login-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .signup {
+    padding-top: 15px;
+    text-align: center;
+  }
+}
